@@ -41,4 +41,12 @@ describe('calculateAverage', () => {
   test('should calculate the average of an array with single element', () => {
     expect(calcuateAverage([1])).toBe(1);
   });
+
+  test('should calculate the average of an array with two element', () => {
+    expect(calcuateAverage([1, 2])).toBe(1.5);
+  });
+
+  test('should calculate the average of an array with three element', () => {
+    expect(calcuateAverage([1, 2, 3])).toBe(2);
+  });
 });
