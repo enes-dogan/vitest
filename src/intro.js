@@ -17,3 +17,15 @@ export function calcuateAverage(numbers) {
   const sum = numbers.reduce((acc, number) => acc + number, 0);
   return sum / numbers.length;
 }
+
+export function factorial(number) {
+  let result = 1;
+
+  if (number <= 1) return result;
+
+  for (let i = number; i > 1; i--) {
+    result *= i;
+  }
+
+  return result;
+}
