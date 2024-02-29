@@ -1,9 +1,7 @@
-// Lesson: Writing your first tests
 export function max(a, b) {
   return a > b ? a : b;
 }
 
-// Exercise
 export function fizzBuzz(n) {
   if (n % 3 === 0 && n % 5 === 0) return 'FizzBuzz';
   if (n % 3 === 0) return 'Fizz';
@@ -21,6 +19,7 @@ export function calcuateAverage(numbers) {
 export function factorial(number) {
   let result = 1;
 
+  if (number < 0) return undefined;
   if (number <= 1) return result;
 
   for (let i = number; i > 1; i--) {
